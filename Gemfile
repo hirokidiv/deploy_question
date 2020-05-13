@@ -66,4 +66,6 @@ group :development, :test do
   gem 'capistrano3-unicorn'
 end
 
-gem "unicorn"
+group :production do
+  gem 'unicorn', '5.4.1'
+end
